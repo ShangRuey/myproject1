@@ -8,6 +8,10 @@ fun main()
     val h = Human( 66.5f,1.7f)
     println(h.bmi())
     h.hello()
+    val score = 88
+    println(score > 60)
+    val c :Char = 'A'
+    println(c.toInt()>60)//需要用Char裡的toInt 方法做比較
 }
 
 class Human(var weight: Float , var height : Float,var name:String = "")
