@@ -10,7 +10,7 @@ public class Person
         this.height = height;
     }
     public Person(String name,float weight, float height){
-        this(weight,height);//一定要在第一行
+        this(weight,height);
         this.name = name;
     }
     public float bmi(){
