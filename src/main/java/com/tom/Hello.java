@@ -7,6 +7,8 @@ public class Hello
 //        System.out.println("Hello world");
         Person p = new Person();
         p.hello();
-        int weight = 190;
+        p.weight=66.5f;
+        p.height = 1.7f;
+        System.out.println(p.bmi());
     }
 }
