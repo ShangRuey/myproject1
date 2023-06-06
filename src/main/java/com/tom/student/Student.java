@@ -14,6 +14,16 @@ public class Student {
         this.math=math;
     }
 
+    public int highest(){
+        int max = (english>math)?english:math;
+       /* if(english>math){
+            max = english;
+        }else{
+            max = math;
+        }*/
+        return max;
+    }
+
     public void print(){
 //        sout+tab
         System.out.println(name+"\t" +english+"\t"+math+
