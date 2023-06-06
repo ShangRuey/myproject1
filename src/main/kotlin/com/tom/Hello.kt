@@ -5,7 +5,13 @@ fun main()
 //    println("Hello World");
 //    Human().hello()
 //    h.hello()
-    val h = Human( 66.5f,1.7f)
+    var s :String?="abcde"
+    s = null
+    println(s?.length)
+    println(s?.get(3))
+    println(s?.substring(3))
+
+    val h = Human(66.5f,1.7f)
     println(h.bmi())
     h.hello()
     val score = 88
@@ -16,7 +22,8 @@ fun main()
 
 class Human(var weight: Float , var height : Float,var name:String = "")
 {
-    init{
+    init
+    {
         println("test $weight")
     }
 //    constructor(name: String, weight: Float, height: Float) :   this(weight,height)
