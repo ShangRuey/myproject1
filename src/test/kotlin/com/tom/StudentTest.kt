@@ -1,4 +1,4 @@
-package com.tom
+package com.tom.kotlin
 
 import com.tom.student.Student
 import org.junit.jupiter.api.Assertions
