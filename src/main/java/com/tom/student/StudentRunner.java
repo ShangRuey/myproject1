@@ -2,11 +2,16 @@ package com.tom.student;
 
 import java.util.Scanner;
 
-public class StudentRunnet
+public class StudentRunner
 {
     public static void main(String[] args) {
+        com.tom.kotlin.Student.getPass();
+
+        Student.pass =20;
         Student stu = new Student("Hank",90,80);
+        Student stu2 = new Student("Tom",20,30);
         stu.print();
+        stu2.print();
         System.out.println("High score:"+stu.highest());
     }
 
