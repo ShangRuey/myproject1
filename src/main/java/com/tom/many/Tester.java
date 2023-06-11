@@ -1,12 +1,39 @@
 package com.tom.many;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Tester {
     public static void main(String[] args) {
-        ArrayList<Integer> list =new ArrayList();
+        HashMap<String,String> stocks = new HashMap<>();
+        stocks.put("2330","TSMC");
+        stocks.put("2317","RED");
+        stocks.put("2330","TDD");
+        System.out.println(stocks.get("2330"));
+        System.out.println(stocks);
+        for (String key: stocks.keySet()){
+            System.out.println(stocks.get(key));
+        }
+        //        set();
+        //        List();
+        //        arrayTest();
+    }
+
+    private static void set() {
+        //set
+        HashSet<Integer> set = new HashSet<>();
+        set.add(6);
+        set.add(7);
+        set.add(8);
+        set.add(1);
+        set.add(7);
+        System.out.println(set);
+        for (int n :set){
+            System.out.println(n);
+        }
+    }
+
+    private static void List() {
+        ArrayList<Integer> list =new ArrayList<>();
         list.add(5);
         list.add(3);
         list.add(1);
@@ -19,7 +46,6 @@ public class Tester {
         for (int score:scores){
             System.out.println(score);
         }
-        //        arrayTest();
     }
 
     private static void arrayTest() {
